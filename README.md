@@ -10,6 +10,7 @@ pip install django_kibrudashboard
 
 
 Features
+
 Search bar for any given model admin
 
 Bootstrap 4 & AdminLTE UI components
