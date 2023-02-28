@@ -1,0 +1,8 @@
+{% load i18n admin_urls django_kibrudashboard %}
+{% get_kibru_ui_tweaks as kibru_ui %}
+
+{% if has_import_permission %}
+<a href='{% url opts|admin_urlname:"import" %}' class="import_link btn {{ kibru_ui.button_classes.secondary }}">
+    <i class="fas fa-file-import"></i> {% trans "Import" %}
+</a>
+{% endif %}
